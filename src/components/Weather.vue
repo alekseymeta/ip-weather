@@ -26,7 +26,7 @@ export default {
     }
   },
   mounted() {
-    fetch('dich.tech/weather/api.php?loc='+this.loc)
+    fetch('https://www.а2-недвижимость.рф/weather/api.php?loc='+this.loc)
         .then(resp => resp.json())
         .then(data => {
           this.weather = data
