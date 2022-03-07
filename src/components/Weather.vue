@@ -26,7 +26,7 @@ export default {
     }
   },
   mounted() {
-    fetch('http://dich.tech/weather/api.php?loc='+this.loc)
+    fetch('dich.tech/weather/api.php?loc='+this.loc)
         .then(resp => resp.json())
         .then(data => {
           this.weather = data
